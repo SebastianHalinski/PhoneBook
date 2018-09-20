@@ -9,9 +9,9 @@ public class DBConnection {
 
     private static DBConnection instance = null;
     private Connection connection = null;
-    private final String DBNAME = "jdbc:sqlite:phoneBook.db";
+    private final String DBNAME = "jdbc:sqlite:src/main/resources/phoneBook.db";
 
-    private DBConnection() {
+    public DBConnection() {
         getConnectionToDatabase();
     }
 
